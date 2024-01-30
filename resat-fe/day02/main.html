@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day2  TIMER</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    #area {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #area-buttons button {
+      margin-right: 10px;
+    }
+    #area-input input {
+      display: inline-block;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+<div id="area" class="container d-flex flex-column align-items-center justify-content-center">
+  <div id="area-timer">
+    <!-- 시간 입력 -->
+    <div id="area-input" class="my-3">
+      <input id="hours" type="number" placeholder="시간" min="0" class="form-control"/>
+      <input id="minutes" type="number" placeholder="분" min="0" class="form-control"/>
+      <input id="seconds" type="number" placeholder="초" min="0" class="form-control"/>
+    </div>
+    <!-- 카운트다운 조회 -->
+    <div id="area-countdown" class="my-3">
+    </div>
+  </div>
+  <!-- 버튼 영역 -->
+  <div id="area-buttons" class="my-3 d-flex">
+    <button id="start" class="btn btn-primary">START</button>
+    <button id="stop" class="btn btn-secondary">STOP</button>
+    <button id="reset" class="btn btn-danger">RESET</button>
+  </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
